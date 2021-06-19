@@ -3,9 +3,14 @@
 npm install concurrently
 
 # Install server and client dependencies
+```shell
 npm run installall
+```
 
-# start both client and server
+# To start both client(Frontend) and server(Backend)
 // Start both server togeather (make sure port 8080 and 3000 are free to use)
+```shell
 npm start
+```
+
 # ReactJs-NodeJs
