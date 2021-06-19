@@ -1,0 +1,20 @@
+{
+  "name": "ashish_app",
+  "version": "1.0.0",
+  "description": "This is a Circle Internet Financial interview problem to create a dashboard to display some peer-to-peer payments data and create new payments.  You've been given a web server that produces some data describing a stream of peer-to-peer payments.  You should create a React.js or Vue.js web dashboard that displays the data and creates new payments.",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "installserver": "cd server && npm install",
+    "installclient": "cd client && npm install",
+    "installall": "concurrently \"npm run installserver\" \"npm run installclient\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
